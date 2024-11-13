@@ -4,7 +4,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server src"
+    "start": "live-server"
   },
   "author": "Skupov",
   "license": "ISC",

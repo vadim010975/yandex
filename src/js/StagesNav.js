@@ -1,5 +1,4 @@
-const DURATION = 1000;
-import animatePlayersList from "./animatePlayersList.js";
+import getDeviceType from "./getDeviceType.js";
 
 export default class StagesNav {
   static btnPreviousEl;
@@ -28,6 +27,14 @@ export default class StagesNav {
   }
 
   static onTouchStartBtnNext() {
+    StagesNav.scrollNext();
+  }
+
+  static onClickBtnPrevious() {
+    StagesNav.scrollPrevious();
+  }
+
+  static onClickBtnNext() {
     StagesNav.scrollNext();
   }
 
@@ -68,21 +75,31 @@ export default class StagesNav {
 
   static activateBtnPrevious() {
     StagesNav.btnPreviousEl.classList.remove("not-active");
-    StagesNav.btnPreviousEl.addEventListener("touchstart", StagesNav.onTouchStartBtnPrevious);
+    if (getDeviceType() === "mobile") {
+      StagesNav.btnPreviousEl.addEventListener("touchstart", StagesNav.onTouchStartBtnPrevious);
+    } else {
+      StagesNav.btnPreviousEl.addEventListener("click", StagesNav.onClickBtnPrevious);
+    }
   }
 
   static deactivateBtnPrevious() {
     StagesNav.btnPreviousEl.classList.add("not-active");
     StagesNav.btnPreviousEl.removeEventListener("touchstart", StagesNav.onTouchStartBtnPrevious);
+    StagesNav.btnPreviousEl.removeEventListener("click", StagesNav.onClickBtnPrevious);
   }
 
   static activateBtnNext() {
     StagesNav.btnNextEl.classList.remove("not-active");
-    StagesNav.btnNextEl.addEventListener("touchstart", StagesNav.onTouchStartBtnNext);
+    if (getDeviceType() === "mobile") {
+      StagesNav.btnNextEl.addEventListener("touchstart", StagesNav.onTouchStartBtnNext);
+    } else {
+      StagesNav.btnNextEl.addEventListener("click", StagesNav.onClickBtnNext);
+    }
   }
 
   static deactivateBtnNext() {
     StagesNav.btnNextEl.classList.add("not-active");
     StagesNav.btnNextEl.removeEventListener("touchstart", StagesNav.onTouchStartBtnNext);
+    StagesNav.btnNextEl.removeEventListener("click", StagesNav.onClickBtnNext);
   }
 }
