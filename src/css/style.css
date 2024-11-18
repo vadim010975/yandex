@@ -74,14 +74,14 @@ div {
   box-sizing: border-box;
 }
 
-@media (min-width: 375px) {
+@media(min-width: 320px) {
   header {
     box-sizing: border-box;
-    max-width: 375px;
+    width: 100%;
     margin: 0 auto;
     background-image: url("../images/header_375.jpg");
     height: 774px;
-    padding: 18px 20px;
+    padding: 18px 5.33vw;
   }
 
   .header-logo {
@@ -90,8 +90,8 @@ div {
 
   .header-logo-img {
     display: inline-block;
-    width: 79px;
-    height: 28px;
+    width: 21vw;
+    height: 7.46vw;
     background-image: url("../images/horses.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -100,14 +100,14 @@ div {
   }
 
   .header-logo-text {
-    width: 128px;
-    height: 32px;
+    width: 34.13vw;
+    height: 8.53vw;
     display: inline-block;
     font-family: GolosText;
     font-weight: 700;
-    font-size: 14.42px;
+    font-size: 3.84vw;
     text-transform: uppercase;
-    line-height: 16px;
+    line-height: 4.27vw;
     color: #595653;
     text-align: start;
   }
@@ -124,9 +124,9 @@ div {
   .header-row {
     font-family: Merriweather;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 9.6vw;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 10.67vw;
     color: #313131;
     margin: 0;
   }
@@ -149,14 +149,14 @@ div {
     text-align: start;
     font-family: GolosText;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 4.8vw;
+    line-height: 6.13vw;
     color: #595653;
     text-transform: none;
   }
 
   .header-content-description>span:first-child {
-    padding-right: 22px;
+    padding-right: 5.87vw;
   }
 
   .header-buttons-wrapper {
@@ -164,10 +164,10 @@ div {
   }
 
   .header-button {
-    width: 335px;
+    width: 89.33vw;
     height: 47px;
     border-radius: 23px;
-    padding: 0 20px;
+    padding: 0 5.33vw;
     cursor: pointer;
     z-index: 3;
   }
@@ -194,7 +194,7 @@ div {
   .header-button p {
     font-family: GolosText;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 4.27vw;
     text-transform: none;
   }
 
@@ -222,7 +222,7 @@ div {
     font-size: 16px;
     text-transform: uppercase;
     margin: 0 auto;
-    width: 375px;
+    width: 100vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -270,9 +270,9 @@ div {
 
   main {
     box-sizing: border-box;
-    width: 375px;
+    width: 100vw;
     margin: 0 auto 176px;
-    padding: 0 20px;
+    padding: 0 5.33vw;
   }
 
   .lecture {
@@ -289,9 +289,9 @@ div {
     color: #313131;
     font-family: Merriweather;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 7.47vw;
     text-transform: uppercase;
-    line-height: 38px;
+    line-height: 10.13vw;
     text-align: start;
   }
 
@@ -309,8 +309,7 @@ div {
     position: absolute;
     top: 224px;
     left: -1px;
-    width: 335px;
-    height: 212px;
+    width: 89.33vw;
   }
 
   .seance {
@@ -318,16 +317,13 @@ div {
   }
 
   .seance-img-wrapper {
-    height: 402px;
     position: relative;
   }
 
   .seance-img {
-    width: 374px;
-    height: 430px;
+    width: 100vw;
     position: absolute;
-    top: -10px;
-    left: -20px;
+    left: -5.33vw;
   }
 
   .seance-content {
@@ -338,16 +334,16 @@ div {
     color: #313131;
     font-family: Merriweather;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 7.47vw;
     text-transform: uppercase;
-    line-height: 38px;
+    line-height: 10.13vw;
     text-align: start;
-    padding-right: 20px;
+    padding-right: 5.33vw;
   }
 
   .seance-content-title>span:last-child {
     display: inline-block;
-    width: 260px;
+    width: 69.33vw;
   }
 
   .seance-content-table {
@@ -357,7 +353,7 @@ div {
   .seance-cell {
     display: block;
     font-family: GolosText;
-    font-size: 20px;
+    font-size: 5.33vw;
     color: #313131;
     text-align: start;
   }
@@ -380,7 +376,7 @@ div {
   }
 
   .seance-cell:nth-child(8) {
-    margin-left: 8px;
+    margin-left: 2.13vw;
   }
 
   .seance-cell:nth-child(9) {
@@ -392,7 +388,7 @@ div {
   }
 
   .seance-old-price {
-    margin-right: 7px;
+    margin-right: 1.87vw;
     position: relative;
   }
 
@@ -410,13 +406,13 @@ div {
     margin-top: 25px;
     font-family: GolosText;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 4.8vw;
     color: #3057A2;
     text-align: start;
   }
 
   .seance-content-footer>span:first-child {
-    padding-right: 50px;
+    padding-right: 13.33vw;
   }
 
   .stages {
@@ -429,22 +425,23 @@ div {
     color: #313131;
     font-family: Merriweather;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 9.6vw;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 10.67vw;
   }
 
   .stages-title-description {
     margin-top: 11px;
     font-family: GolosText;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 4.8vw;
     color: #3057A2;
   }
 
   .stages-table {
     overflow: hidden;
     margin-top: 147px;
+    width: 89.33vw;
   }
 
   .stages-list {
@@ -461,20 +458,20 @@ div {
   }
 
   .stages-list>div:nth-of-type(4)>div:last-child>span:first-child {
-    margin-right: 100px;
+    margin-right: 26.67vw;
   }
 
   .stages-list>div:last-child>div:last-child>span:nth-of-type(2) {
-    margin-right: 50px;
+    margin-right: 13.33vw;
   }
 
   .stages-table-cell {
-    width: 335px;
+    width: 89.33vw;
     padding-top: 63px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5.33vw;
+    padding-right: 5.33vw;
     display: flex;
-    gap: 16px;
+    gap: 4.27vw;
   }
 
   .stages-wrapper-1-2-cell>.stages-table-cell:last-child,
@@ -486,44 +483,44 @@ div {
   .stages-table-cell-number {
     font-family: GolosText;
     font-weight: 600;
-    font-size: 20px;
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
+    font-size: 5.33vw;
+    width: 9.6vw;
+    height: 9.6vw;
+    border-radius: 4.8vw;
     background-color: #ffffff;
     flex-shrink: 0;
     text-align: center;
-    line-height: 33px;
+    line-height: 8.8vw;
   }
 
   .stages-table-cell-text {
     font-family: GolosText;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 4.8vw;
     text-align: start;
   }
 
   .stages-plane {
-    width: 340px;
+    width: 90.67vw;
     position: absolute;
     top: 190px;
-    right: -13px;
+    right: -3.47vw;
     transform: rotate(-3.5deg);
   }
 
   .stages-nav {
     margin: 29px auto 0;
     display: flex;
-    width: 178px;
+    width: 47.47vw;
     justify-content: space-between;
     align-items: center;
   }
 
   .stages-nav-btn-previous,
   .stages-nav-btn-next {
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
+    width: 9.6vw;
+    height: 9.6vw;
+    border-radius: 4.8vw;
     border: none;
     background-color: #313131;
     color: #ffffff;
@@ -551,13 +548,13 @@ div {
   .stages-nav-points {
     display: flex;
     justify-content: space-between;
-    gap: 6px;
+    gap: 1.6vw;
   }
 
   .stages-nav-point {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    width: 2.67vw;
+    height: 2.67vw;
+    border-radius: 1.33vw;
     background-color: #D9D9D9;
   }
 
@@ -569,8 +566,8 @@ div {
   .players-header-title {
     font-family: Merriweather;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 9.6vw;
+    line-height: 10.67vw;
     text-transform: uppercase;
     color: #313131;
   }
@@ -578,7 +575,7 @@ div {
   .players-header-nav {
     position: absolute;
     bottom: -80px;
-    left: 104px;
+    left: 27.73vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -586,9 +583,9 @@ div {
 
   .players-header-nav-previous,
   .players-header-nav-next {
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
+    width: 9.6vw;
+    height: 9.6vw;
+    border-radius: 4.8vw;
     border: none;
     background-color: #313131;
     color: #ffffff;
@@ -608,12 +605,12 @@ div {
   .players-header-nav-counter {
     text-align: center;
     height: 44px;
-    line-height: 44px;
+    line-height: 11.73vw;
     font-family: GolosText;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 4.27vw;
     color: #313131;
-    margin: 0 12px;
+    margin: 0 3.2vw;
   }
 
   .players-window {
@@ -630,22 +627,22 @@ div {
   }
 
   .players-list-item {
-    width: 335px;
+    width: 89.33vw;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .players-list-item-img {
-    width: 244px;
-    height: 244px;
+    width: 65.07vw;
+    height: 65.07vw;
   }
 
   .players-list-item-name {
     margin-top: 28px;
     font-family: GolosText;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 6.4vw;
     color: #313131;
   }
 
@@ -653,13 +650,13 @@ div {
     margin-top: 8px;
     font-family: GolosText;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 5.33vw;
     color: #313131;
   }
 
   .players-list-item-button {
     margin-top: 19px;
-    width: 113px;
+    width: 30.13vw;
     height: 35px;
     border-radius: 17px;
     border: 1px solid #3057A2;
@@ -667,7 +664,7 @@ div {
     color: #3057A2;
     font-family: GolosText;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 4.27vw;
   }
 
   .players-list-item-button:hover {
@@ -677,16 +674,250 @@ div {
 
   footer {
     box-sizing: border-box;
-    max-width: 375px;
+    max-width: 100vw;
     margin: 0 auto;
-    padding: 40px 20px 60px;
+    padding: 40px 5.33vw 60px;
     background-color: #E9DED4;
     font-family: GolosText;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 4.27vw;
+    line-height: 5.07vw;
     color: #313131;
     text-align: start;
+  }
+
+  footer>span:first-child {
+    margin-right: 32vw;
+  }
+
+  footer>span:nth-of-type(2),
+  footer>span:nth-of-type(3) {
+    margin-right: 10.67vw;
+  }
+
+  footer>span:nth-of-type(4) {
+    margin-right: 16vw;
+  }
+
+}
+
+@media (min-width: 375px) {
+  header {
+    max-width: 375px;
+    padding: 18px 20px;
+  }
+
+  .header-logo-img {
+    width: 79px;
+    height: 28px;
+  }
+
+  .header-logo-text {
+    width: 128px;
+    height: 32px;
+    font-size: 14.42px;
+    line-height: 16px;
+  }
+
+  .header-row {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .header-content-description {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .header-content-description>span:first-child {
+    padding-right: 22px;
+  }
+
+  .header-button {
+    width: 335px;
+    padding: 0 20px;
+  }
+
+  .header-button p {
+    font-size: 16px;
+  }
+
+  .running-line {
+    width: 375px;
+  }
+
+  main {
+    width: 375px;
+    padding: 0 20px;
+  }
+
+  .lecture-content-item {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .lecture-img {
+    width: 335px;
+    height: 212px;
+  }
+
+  .seance-img-wrapper {
+    height: 402px;
+    position: relative;
+  }
+
+  .seance-img {
+    width: 374px;
+    height: 430px;
+    top: -10px;
+    left: -20px;
+  }
+
+  .seance-content-title {
+    font-size: 28px;
+    line-height: 38px;
+    padding-right: 20px;
+  }
+
+  .seance-content-title>span:last-child {
+    width: 260px;
+  }
+
+  .seance-cell {
+    font-size: 20px;
+  }
+
+  .seance-cell:nth-child(8) {
+    margin-left: 8px;
+  }
+
+  .seance-old-price {
+    margin-right: 7px;
+  }
+
+  .seance-content-footer {
+    font-size: 18px;
+  }
+
+  .seance-content-footer>span:first-child {
+    padding-right: 50px;
+  }
+
+  .stages-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .stages-title-description {
+    font-size: 18px;
+  }
+
+  .stages-table {
+    width: auto;
+  }
+
+  .stages-list>div:nth-of-type(4)>div:last-child>span:first-child {
+    margin-right: 100px;
+  }
+
+  .stages-list>div:last-child>div:last-child>span:nth-of-type(2) {
+    margin-right: 50px;
+  }
+
+  .stages-table-cell {
+    width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 16px;
+  }
+
+  .stages-table-cell-number {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    line-height: 33px;
+  }
+
+  .stages-table-cell-text {
+    font-size: 18px;
+  }
+
+  .stages-plane {
+    width: 340px;
+    right: -13px;
+  }
+
+  .stages-nav {
+    width: 178px;
+  }
+
+  .stages-nav-btn-previous,
+  .stages-nav-btn-next {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+  }
+
+  .stages-nav-points {
+    gap: 6px;
+  }
+
+  .stages-nav-point {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+
+  .players-header-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .players-header-nav {
+    left: 104px;
+  }
+
+  .players-header-nav-previous,
+  .players-header-nav-next {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+  }
+
+  .players-header-nav-counter {
+    line-height: 44px;
+    font-size: 16px;
+    margin: 0 12px;
+  }
+
+  .players-list-item {
+    width: 335px;
+  }
+
+  .players-list-item-img {
+    width: 244px;
+    height: 244px;
+  }
+
+  .players-list-item-name {
+    font-size: 24px;
+  }
+
+  .players-list-item-title {
+    font-size: 20px;
+  }
+
+  .players-list-item-button {
+    width: 113px;
+    font-size: 16px;
+  }
+
+  footer {
+    max-width: 375px;
+    padding: 40px 20px 60px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   footer>span:first-child {

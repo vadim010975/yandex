@@ -6,6 +6,7 @@ export default class StagesNav {
   static pointsEl;
   static windowEl;
   static listEl;
+  static width;
 
   static init() {
     StagesNav.bindToDom();
@@ -19,6 +20,7 @@ export default class StagesNav {
     StagesNav.btnNextEl = document.querySelector(".stages-nav-btn-next");
     StagesNav.pointsEl = document.querySelector(".stages-nav-points");
     StagesNav.windowEl = document.querySelector(".stages-table");
+    StagesNav.width = StagesNav.windowEl.offsetWidth;
     StagesNav.listEl = document.querySelector(".stages-list");
   }
 
@@ -43,22 +45,22 @@ export default class StagesNav {
     if (offsetRight <= 0) {
       return;
     }
-    StagesNav.listEl.style.right = offsetRight - 335 + "px";
+    StagesNav.listEl.style.right = offsetRight - StagesNav.width + "px";
     StagesNav.setNavState();
   }
 
   static scrollNext() {
     const offsetRight = StagesNav.listEl.style.right ? +StagesNav.listEl.style.right.slice(0, -2) : 0;
-    if (offsetRight >= 1340) {
+    if (offsetRight >= StagesNav.width * 4) {
       return;
     }
-    StagesNav.listEl.style.right = offsetRight + 335 + "px";
+    StagesNav.listEl.style.right = offsetRight + StagesNav.width + "px";
     StagesNav.setNavState();
   }
 
   static setNavState() {
     const offsetRight = +StagesNav.listEl.style.right.slice(0, -2);
-    if (offsetRight >= 1340) {
+    if (offsetRight >= StagesNav.width * 4) {
       StagesNav.deactivateBtnNext();
     } else {
       StagesNav.activateBtnNext();
@@ -68,7 +70,7 @@ export default class StagesNav {
     } else {
       StagesNav.activateBtnPrevious();
     }
-    const point = offsetRight / 335;
+    const point = offsetRight / StagesNav.width;
     [...StagesNav.pointsEl.children].forEach(el => el.style.backgroundColor = "#d9d9d9");
     [...StagesNav.pointsEl.children][point].style.backgroundColor = "#313131";
   }

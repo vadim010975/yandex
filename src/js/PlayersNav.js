@@ -63,7 +63,7 @@ export default class PlayersNav {
       }
       possibleRelocation = 1;
       currentPosition = lastElementInWindowId;
-      width = 335;
+      width = PlayersNav.windowEl.offsetWidth;
     } else {
       if (lastElementInWindowId < 4) {
         return;
@@ -97,7 +97,7 @@ export default class PlayersNav {
       }
       possibleRelocation = 1;
       currentPosition = lastElementInWindowId;
-      width = 335;
+      width = PlayersNav.windowEl.offsetWidth;
     } else {
       if (lastElementInWindowId < 3) {
         return;
