@@ -87,6 +87,7 @@ export default class PlayersNav {
   }
 
   static scrollNext() {
+    console.log(PlayersNav.getIdOfLastElementInWindow(), PlayersNav.getIdOfLastElementInList(), PlayersNav.windowEl.offsetWidth);
     const lastElementInWindowId = PlayersNav.getIdOfLastElementInWindow();
     let possibleRelocation;
     let currentPosition;
@@ -140,14 +141,17 @@ export default class PlayersNav {
   static getIdOfLastElementInWindow() {
     const leftWindow = PlayersNav.windowEl.getBoundingClientRect().left;
     const rightWindow = PlayersNav.windowEl.getBoundingClientRect().right;
+    console.log(leftWindow, rightWindow);
     const visibleElements = [...PlayersNav.listEl.children].filter((child) => {
       const leftChild = child.getBoundingClientRect().left;
       const rightChild = child.getBoundingClientRect().right;
+      console.log(leftChild, rightChild);
       if (leftChild >= leftWindow && rightChild <= rightWindow) {
         return true;
       }
       return false;
     });
+    console.log(visibleElements);
     if (visibleElements?.length > 0) {
       return +visibleElements.reduce(
         (acc, el) => {
