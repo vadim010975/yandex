@@ -309,7 +309,7 @@ div {
     position: absolute;
     top: 224px;
     left: -1px;
-    width: 89.33vw;
+    width: calc(100vw - 40px);
   }
 
   .seance {
@@ -441,7 +441,7 @@ div {
   .stages-table {
     overflow: hidden;
     margin-top: 147px;
-    width: 89.33vw;
+    width: calc(100vw - 40px);
   }
 
   .stages-list {
@@ -466,7 +466,7 @@ div {
   }
 
   .stages-table-cell {
-    width: 89.33vw;
+    width: calc(100vw - 40px);
     padding-top: 63px;
     padding-left: 5.34vw;
     padding-right: 5.34vw;
