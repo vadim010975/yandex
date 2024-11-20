@@ -317,6 +317,7 @@ div {
   }
 
   .seance-img-wrapper {
+    height: 402px;
     position: relative;
   }
 
@@ -395,7 +396,7 @@ div {
   .seance-old-price::after {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 3.73vw;
     left: -2px;
     height: 2px;
     width: 82px;
@@ -793,6 +794,10 @@ div {
 
   .seance-old-price {
     margin-right: 7px;
+  }
+
+  .seance-old-price::after {
+    top: 14px;
   }
 
   .seance-content-footer {
